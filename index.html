@@ -194,6 +194,7 @@
                     //     data: formdata,
                     // })
                     $("#myModal").modal('hide');
+                    // 再読み込み処理 １ページ目に移動
                     myTable.ajax.reload();
                 } else {
                     console.log("ajaxで更新処理");
@@ -204,6 +205,7 @@
                     //     data: formdata,
                     // })
                     $("#myModal").modal('hide');
+                    //再読み込み処理 ページ移動をしない
                     myTable.ajax.reload(null, false);
                 };
 
